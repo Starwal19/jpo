@@ -1,0 +1,10 @@
+Bonjour, notre équipe a trouvé un dossier des fancy bears (un groupe de hackers russes).
+Votre mission est de trouver ce qu'ils y ont caché et comptent faire. 
+
+Bonne chance. 
+
+PS-1: pour la première image faites une attaque par force brute grâce au script stegcrack.
+Pour voir ces options faites un ./stegcrack -h
+
+PS-2: vous pouvez utiliser la wordlist qui s'appel "word.txt" qui contient 5000 mots de passe commun. 
+

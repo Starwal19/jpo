@@ -1,0 +1,3 @@
+Indice 3: 
+
+Pour ce dernier indice, le format d'encodage est du base 64, utilisez la partie "from base 64" dans le site cyberchef. 
