@@ -50,7 +50,7 @@ function valid_flag(level) {
         }
     }
     if (level == "advanced") {
-        if (value_flag == "$FLAG_{Non,pasTwitter!}") {
+        if (value_flag == "$FLAG_{twitter}") {
             msg.innerHTML = "Flag correct.";
             msg.style.visibility = "visible";
             msg.style.color = "green";
