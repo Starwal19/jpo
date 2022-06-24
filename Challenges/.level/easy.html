@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <title>Level easy</title>
+        <link rel="stylesheet" href="../.static/style.css">
+    </head>
+    <body>
+        <div>
+            <ul class="left-navbar">
+                <li><a class="navbar-button" href="../jpo-manip.html">Home</a></li>
+                <li><a class="current-navbar-button" href="">Easy</a></li>
+                <li><a class="navbar-button" href="medium.html">Medium</a></li>
+                <li><a class="navbar-button" href="hard.html">Hard</a></li>
+                <li><a class="navbar-button" href="advanced.html">Advanced</a></li>
+                <li><a class="navbar-button" href="expert.html">Expert</a></li>
+            </ul>
+
+            <div class="main-content">
+                <h1>Easy - Introduction :</h1><hr>
+                <p>Ce premier niveau a pour objectif de vous familiariser avec steghide.</p>
+                <p>Vous avez devant vous trois images dont l'une d'elle contient un message caché.</p>
+                <p>Vous avez comme objectif de touver qu'elle image contient ce message et de l'extraire.</p>
+                <p>Un mot de passe est nécéssaire, vous allez devoir le deviner.</p>
+                <p>Il s'agit de l'un des pires mot de passe à utiliser. (Google est votre ami)</p>
+                <p>Bonne chance.</p><br>
+
+                <h1>Easy - Flag :</h1><hr><br>
+                <label for="flag">FLAG : </label><input id="flag" type="text" placeholder="$FLAG_{...}">
+                <p id="flag-msg" class="flag-msg">Flag correct !</p>
+                <button onclick="valid_flag('easy')">Valider</button><br><br>
+
+                <h1>Easy - Indices :</h1><hr> 
+                <button id="Button1" title="Show" onclick="toggle_hidde_show('1')">Indice 1</button>
+                <div id="Container1" class="hint-container">
+                    <p id="Hint1" class="hint"><b>Indice 1 :</b> La commande 'steghide info &#60;image&#62;' peut vous servir à trouver quelle image contient le fichier caché.</p>
+                </div>
+                <button id="Button2" title="Show" onclick="toggle_hidde_show('2')">Indice 2</button>
+                <div id="Container2" class="hint-container">
+                    <p id="Hint2" class="hint"><b>Indice 2 :</b> La commande 'steghide extract -sf &#60;image&#62;' peut vous servir à extraire un fichier d'une image.</p>
+                </div>
+                <button id="Button3" title="Show" onclick="toggle_hidde_show('3')">Indice 3</button>
+                <div id="Container3" class="hint-container">
+                    <p id="Hint3" class="hint"><b>Indice 3 :</b> Cherchez sur le WEB quel est le pire mot de passe, vous le trouverez facilement.</p>
+                </div>
+                <button id="Button4" title="Show" onclick="toggle_hidde_show('4')">Indice 4</button>
+                <div id="Container4" class="hint-container">
+                    <p id="Hint4" class="hint"><b>Indice 4 :</b> Le mot de passe est '123456'.</p>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="../.static/script.js"></script>
+</html>

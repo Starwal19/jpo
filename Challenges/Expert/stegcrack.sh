@@ -106,7 +106,6 @@ One password is found for the ${INPUT} 's file: ${GREEN} ${password} ${WHITE}
 
 """
         [ $OUTPUT -eq 1 ] && steghide extract -sf $INPUT -p $password
-
         exit 0 
     fi
 

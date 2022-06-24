@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <title>Level advanced</title>
+        <link rel="stylesheet" href="../.static/style.css">
+    </head>
+    <body>
+        <div>
+            <ul class="left-navbar">
+                <li><a class="navbar-button" href="../jpo-manip.html">Home</a></li>
+                <li><a class="navbar-button" href="easy.html">Easy</a></li>
+                <li><a class="navbar-button" href="medium.html">Medium</a></li>
+                <li><a class="navbar-button" href="hard.html">Hard</a></li>
+                <li><a class="current-navbar-button" href="">Advanced</a></li>
+                <li><a class="navbar-button" href="expert.html">Expert</a></li>
+            </ul>
+
+            <div class="main-content">
+                <h1>Advanced - Introduction :</h1><hr>
+                <p>Grâce aux instructions que vous avez récupéré, nous pouvons commencer à chercher ce que les Fancy Bear veulent faire.</p>
+                <p>Voici une nouvelle image, nous vous demandons de l'analyser et d'y extraire tout ce que vous trouverez.</p>
+                <p>Vous allez devoir utiliser tous les outils que vous connaisez. Par contre, il est fort probable que notre programme par brute force ne serve à rien à ce niveau.</p><br>
+                <p>Bonne chance.</p> 
+
+                <h1>Advanced - Flag :</h1><hr><br>
+                <label for="flag">FLAG : </label><input id="flag" type="text" placeholder="$FLAG_{...}">
+                <p id="flag-msg" class="flag-msg">Flag correct !</p>
+                <button onclick="valid_flag('advanced')">Valider</button><br><br>
+
+                <h1>Advanced - Indices :</h1><hr> 
+                <button id="Button1" title="Show" onclick="toggle_hidde_show('1')">Indice 1</button>
+                <div id="Container1" class="hint-container">
+                    <p id="Hint1" class="hint"><b>Indice 1 :</b> Utilisez 'exiftool' afin d'analyser les métadonnées de l'image.</p>
+                </div>
+                <button id="Button2" title="Show" onclick="toggle_hidde_show('2')">Indice 2</button>
+                <div id="Container2" class="hint-container">
+                    <p id="Hint2" class="hint"><b>Indice 2 :</b> Utilisez 'steghide' pour extraire les données de l'images.</p>
+                </div>
+                <button id="Button3" title="Show" onclick="toggle_hidde_show('3')">Indice 3</button>
+                <div id="Container3" class="hint-container">
+                    <p id="Hint3" class="hint"><b>Indice 3 :</b> Le mot de pass est 'STEGANO-IESN-JPO'.</p>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="../.static/script.js"></script>
+</html>

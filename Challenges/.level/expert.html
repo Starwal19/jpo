@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <title>Level expert</title>
+        <link rel="stylesheet" href="../.static/style.css">
+    </head>
+    <body>
+        <div>
+            <ul class="left-navbar">
+                <li><a class="navbar-button" href="../jpo-manip.html">Home</a></li>
+                <li><a class="navbar-button" href="easy.html">Easy</a></li>
+                <li><a class="navbar-button" href="medium.html">Medium</a></li>
+                <li><a class="navbar-button" href="hard.html">Hard</a></li>
+                <li><a class="navbar-button" href="advanced.html">Advanced</a></li>
+                <li><a class="current-navbar-button" href="">Expert</a></li>
+            </ul>
+
+            <div class="main-content">
+                <h1>Expert - Introduction :</h1><hr>
+                <p>Maintenant que nous savons ce que les Fancy Bear manigancent, il nous faut savoir quand vont-il faire leur coup.</p>
+                <p>Vous aurez besoins de tous les outils que nous avons utilisé jusque là.</p><br>
+                <p>Bonne chance.</p>
+                <p>Le flag est le message caché en clair.</p>
+                <h1>Expert - Flag :</h1><hr><br>
+                <label for="flag">FLAG : </label><input id="flag" type="text" placeholder="$FLAG_{...}">
+                <p id="flag-msg" class="flag-msg">Flag correct !</p>
+                <button onclick="valid_flag('expert')">Valider</button><br><br>
+
+                <h1>Expert - Indices :</h1><hr> 
+                <button id="Button1" title="Show" onclick="toggle_hidde_show('1')">Indice 1</button>
+                <div id="Container1" class="hint-container">
+                    <p id="Hint1" class="hint"><b>Indice 1 :</b> Vous allez devoir refaire du brute force.</p>
+                </div>
+                <button id="Button2" title="Show" onclick="toggle_hidde_show('2')">Indice 2</button>
+                <div id="Container2" class="hint-container">
+                    <p id="Hint2" class="hint"><b>Indice 2 :</b> Vous pouvez chercher sur le WEB quel algorithme de chiffrement se finit par des '='.</p>
+                </div>
+                <button id="Button3" title="Show" onclick="toggle_hidde_show('3')">Indice 3</button>
+                <div id="Container3" class="hint-container">
+                    <p id="Hint3" class="hint"><b>Indice 3 :</b> Servez vous de 'Cyberchef' sur le WEB pour déchiffrer le message.</p>
+                </div>
+                <button id="Button4" title="Show" onclick="toggle_hidde_show('4')">Indice 4</button>
+                <div id="Container4" class="hint-container">
+                    <p id="Hint4" class="hint"><b>Indice 4 :</b> Observez bien le message en clair, le moment de l'attaque est caché dedans.</p>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="../.static/script.js"></script>
+</html>

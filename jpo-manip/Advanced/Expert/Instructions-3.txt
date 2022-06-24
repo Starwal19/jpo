@@ -1,4 +1,0 @@
-Pour cette partie, vous devez d'abord essayer de récupérer le texte en claire du fichier "Expert.txt" en trouvant le format d'encodage du texte. 
-Ensuite une fois que vous aurez un texte lisible essayer de trouver l'information cachée 
-
-Bonne chance ;) 
