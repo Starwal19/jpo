@@ -18,7 +18,30 @@
             </ul>
 
             <div class="main-content">
-                
+                <h1>Easy - Introduction :</h1><hr>
+                <p>Vous allez maintenant vous familiariser avec 'exiftool'.</p>
+                <p>Vous avez une image dans votre répertoire composée d'une métadonée chiffrée.</p>
+                <p>Afin de trouvé comment le message a été chiffré, servez vous de ce site WEB : <a href="https://www.boxentriq.com/code-breaking/cipher-identifier">Cipher Identifier</a>.</p>
+                <p>Vous allez pouvoir déchiffrer votre message avec ce deuxième site WEB : <a href="https://gchq.github.io/CyberChef/">CyberChef</a>.</p>
+
+                <h1>Easy - Flag :</h1><hr><br>
+                <label for="flag">FLAG : </label><input id="flag" type="text" placeholder="$FLAG_{...}">
+                <p id="flag-msg" class="flag-msg">Flag correct !</p>
+                <button onclick="valid_flag('easy')">Valider</button><br><br>
+
+                <h1>Easy - Indices :</h1><hr> 
+                <button id="Button1" title="Show" onclick="toggle_hidde_show('1')">Indice 1</button>
+                <div id="Container1" class="hint-container">
+                    <p id="Hint1" class="hint"><b>Indice 1 :</b> La commande 'exiftool &#60;image&#62;' peut vous servir à voir les métadonnées d'une image.</p>
+                </div>
+                <button id="Button2" title="Show" onclick="toggle_hidde_show('2')">Indice 2</button>
+                <div id="Container2" class="hint-container">
+                    <p id="Hint2" class="hint"><b>Indice 2 :</b> Le texte a été conventit en hexadécimal.</p>
+                </div>
+                <button id="Button3" title="Show" onclick="toggle_hidde_show('3')">Indice 3</button>
+                <div id="Container3" class="hint-container">
+                    <p id="Hint3" class="hint"><b>Indice 3 :</b> Utilisez 'from hex' sur CyberChef afin de convertir l'hexadécimal.</p>
+                </div>
             </div>
         </div>
     </body>
